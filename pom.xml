@@ -15,4 +15,21 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <build>
+	<filters>
+      <filter>src/main/filters/filter.properties</filter>
+    </filters>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+  </build>
+  
+  <properties>
+    <my.properties.value>hello seesawin2!</my.properties.value>
+  </properties>
+  
 </project>
